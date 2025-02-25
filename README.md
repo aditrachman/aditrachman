@@ -1,10 +1,11 @@
-```python
-nickname = "catastrovia"
-def kenalan():
-  global nickname
-  nickname = "yara"
+```r
+nickname <- "anshelschella"
+
+kenalan <- function() {
+  assign("nickname", "yara", envir = .GlobalEnv)
+}
 
 kenalan()
-print("hai panggilan ku " + nickname)
+print(paste("hai, panggil aku", nickname))
 
 ```
