@@ -1,11 +1,14 @@
-```r
-nickname <- "anshelschella"  
+```python
+from dataclasses import dataclass
 
-kenalan <- function() {
-  assign("nickname", "yara", envir = .GlobalEnv)
-}
+@dataclass
+class Agent:
+    identity: str = "anshelschella"
 
-kenalan()
-print(paste("hai, panggil aku", nickname))
+    def invoke(self):
+        self.identity = "yara"
+        return f"Hai, panggil aku {self.identity}"
+
+print(Agent().invoke())
 
 ```
